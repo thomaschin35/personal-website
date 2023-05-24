@@ -1,6 +1,41 @@
 @use "sass:list";
+@import "../../index.scss";
 
 .welcome-section {
     margin-top: 32px;
-    
+    background-color: #222222;
+    background-size: cover;
+    height: 100vh;
+    @include center;
+    h5 {
+        font-size: 3em;
+    }
+    .description {
+        @include center;
+        background-color: #262626;
+        width: 50%;
+        height: 80vh;
+        color:aliceblue;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        p {
+            font-size: 2em;
+        }
+    }
+    .b1 {
+        @include center;
+    }
+}
+.personal-photo {
+    border-radius: 20px;
+    height: 90vh;
+    width: 50%;
+    @include center;
+    #personal-photo {
+        // make picture fit div
+        width: 100%;
+        padding: 5px;
+        height: 50%;
+        object-fit: cover;
+        border-radius: inherit;
+    }
 }
