@@ -1,4 +1,5 @@
-import WelcomePage from './Components/Welcome/WelcomePage'
+import WelcomePage from './Components/Welcome/WelcomePage';
+import AboutMe from './Components/AboutMe/AboutMe';
 import './App.scss';
 
 function App() {
@@ -19,8 +20,11 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <WelcomePage>
-    </WelcomePage>
+    <div>
+      <WelcomePage/>
+      <AboutMe/>
+
+    </div>
   );
 }
 

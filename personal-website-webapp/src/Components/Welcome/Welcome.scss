@@ -2,33 +2,40 @@
 @import "../../index.scss";
 
 .welcome-section {
-    margin-top: 32px;
-    background-color: #222222;
+    // margin-top: 32px;
+    background-color:  #DEB887;
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     @include center;
+    text-align: left;
     h5 {
+        // @include center;
         font-size: 3em;
+        white-space: pre-line;
     }
     .description {
         @include center;
-        background-color: #262626;
+        // background-color: #262626;
         width: 50%;
         height: 80vh;
-        color:aliceblue;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         p {
-            font-size: 2em;
+            // @include center;
+            font-size: 1.9em;
+            margin-top: -40px;
         }
     }
-    .b1 {
-        @include center;
+    .textBox {
+        height: 40vh;
+        // background-color: #DEA237;
+        width: 50%;
     }
 }
 .personal-photo {
     border-radius: 20px;
     height: 90vh;
-    width: 50%;
+    width: 35vh;
+    margin-right:3vh;
     @include center;
     #personal-photo {
         // make picture fit div
