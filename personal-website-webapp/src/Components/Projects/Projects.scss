@@ -1,0 +1,69 @@
+@import "../../index.scss";
+.projects {
+    height: 100vh;
+    background-color:bisque;
+    @include center;
+    position:relative;
+    // display:flex;
+}
+.folder {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .folder::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: 20px;
+    height: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+  }
+  
+  .folder::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 30px;
+    width: 140px;
+    height: 0;
+    border-top: 2px solid #ccc;
+  }
+  
+  .folder img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .folder h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .folder p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  .folder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }

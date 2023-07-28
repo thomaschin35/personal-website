@@ -1,5 +1,6 @@
 import WelcomePage from './Components/Welcome/WelcomePage';
 import AboutMe from './Components/AboutMe/AboutMe';
+import Projects from './Components/Projects/Projects';
 import './App.scss';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
     <div>
       <WelcomePage/>
       <AboutMe/>
-
+      <Projects/>
     </div>
   );
 }

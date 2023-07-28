@@ -1,24 +1,63 @@
 @use "sass:list";
 @import "../../index.scss";
 .about-me {
+  // @include center;
+  position:relative;
   @include center;
-
-  .header {
-    font-size: 2em;
-  }
+  height: 100%;
+  // background-image:linear-gradient(180deg, rgba(227, 227, 227, 0.8), rgba(157, 209, 237, 0.802));
+  // width: 60%;
   .personal-facts {
     @include center;
-    background-color: beige;
-    border-radius: 10px;
-    width: 75%;
-    .hstack {
-        @include center;
+    // background-color: rgba(192, 218, 242, 0.5);
+    // border: 10px solid rgba(62, 62, 62, 0.5);
+    // border-radius: 10px;
+    width: 1200px;
+    // margin:auto;
+    
+    padding:10px;
+    .header {
+      text-align: center;
+      width: 75%;
+      font-size: 2em;
+      line-height: 50%;
     }
-    .col {
-      width: 45%;
-      padding: 5px;
-      padding: 10px;
-      background-color: darkorange;
+    .bio {
+      display:flex;
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: center;
+    }
+    .personal-photo {
+      border-radius: 50%;
+      height: 53vh;
+      width: 35vh;
+      margin-right: 20vh;
+      margin-left: 20vh;
+      @include center;
+      #personal-photo {
+        // make picture fit div
+        // border: 50px solid rgba(62, 62, 62, 0.5);
+        // border: 25px solid rgba(0, 99, 136, 0.5);
+        width: 150%;
+        padding: 5px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+      }
+    }
+    .hstack {
+      // background-color: azure;
+      width: 100%;
+      flex-direction: row;
+      align-items: flex-start;
+      padding:10px;
+      @include center;
+      .col {
+        width: 47%;
+        padding: 5px;
+        // background-color: darkorange;
+      }
     }
   }
 }
@@ -26,12 +65,14 @@
   .title {
     font-weight: 600;
     font-size: 2em;
+    margin-bottom: -5px;
     // background-color: aqua;
   }
   .body {
     // background-color: aquamarine;
     font-weight: 400;
     font-size: 1.05rem;
-    margin: 0px 0 15px 0;
+    line-height: 200%;
+    // margin: 0px 0 15px 0;
   }
 }
