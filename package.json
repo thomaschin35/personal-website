@@ -1,6 +1,6 @@
 {
-  "homepage": "http://thomaschin35.github.io/personal-website",
-  "name": "personal-website-webapp",
+  "homepage": "https://thomaschin35.github.io/personal-website",
+  "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
