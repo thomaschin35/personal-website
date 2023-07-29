@@ -14,8 +14,8 @@ function Welcome() {
         </Box> */}
         <div className="textBox">
           <Fade bottom opposite>
-            <p>
-              Hey, I'm
+            <p> 
+            <i>Hey, I'm</i>
             </p>
           </Fade>
           <Fade bottom delay={500} opposite>

@@ -1,7 +1,9 @@
+import { BrowserRouter } from 'react-router-dom';
 import WelcomePage from './Components/Welcome/WelcomePage';
 import AboutMe from './Components/AboutMe/AboutMe';
+import Header from './Components/Navbar/Navbar';
 import Projects from './Components/Projects/Projects';
-import './App.scss';
+import './index.scss';
 
 function App() {
   return (
@@ -21,11 +23,12 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <div>
+    <BrowserRouter>
+      <Header/>
       <WelcomePage/>
       <AboutMe/>
       <Projects/>
-    </div>
+    </BrowserRouter>
   );
 }
 
