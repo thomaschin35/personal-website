@@ -15,7 +15,7 @@ function AboutMe() {
   };
 
   return (
-    <section className="about-me">
+    <section className="about-me" id="aboutMe">
       <Stack className="personal-facts" spacing={1}>
         <div className="header">
           <h1 >ABOUT ME</h1>

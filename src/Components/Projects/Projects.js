@@ -1,36 +1,60 @@
 import { React } from "react";
 import "./Projects.scss";
-import { Stack, Box} from "@mui/material";
-import personalPhoto from "./personal-photo.png";
+import { Stack, Box, tableBodyClasses } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
-import project_data from './ProjectData';
+import project_data from "./ProjectData";
+
 function Projects() {
+  const handleClick = (link) => {
+    window.open(link); // Opens the link in a new tab
+  };
+
   const ProjectFolder = (props) => {
-    const { projectName, projectLink, description, languages } = props;
+    const { projectName, projectLink, description, languages, color } = props;
     return (
-      <Card className="card">
-        <CardHeader className="card-header"title={projectName} subheader={languages} />
+      <Card
+        className="card"
+        style={{ backgroundColor: "whitesmoke" }}
+        sx={{
+          background: "cover",
+          transition: "all 0.2s ease",
+          "&:hover": {
+            transform: "scale3d(0.96, 0.96, 0.5)",
+          },
+        }}
+        onClick={() => handleClick(projectLink)}
+      >
+        
         <CardMedia
           className="media"
           component="img"
-          height="300"
-          image={personalPhoto}
-          sx={{
-            background: "cover",
-            transition: "all 0.2s ease",
-            "&:hover": {
-              transform: "scale3d(0.95, 0.95, 0.5)",
-            },
-          }}
+          height="200"
+          image={require(`./projectPhotos/${projectName}.png`)}
+          sx={{minHeight: "300"}}
         />
-        <CardContent>
+        <CardHeader
+          className="card-header"
+          titleTypographyProps={{
+            fontSize: 22,
+            fontWeight: "bold",
+            fontFamily:'Trebuchet MS',
+          }}
+          subheaderTypographyProps={{
+            fontSize: 15,
+            fontFamily:'Trebuchet MS'
+          }}
+          title={projectName}
+          subheader={languages}
+        />
+        <CardContent className="content">
           <p>{description}</p>
         </CardContent>
+
       </Card>
       // <div className="folder">
       //     <img src={personalPhoto}/>
@@ -45,12 +69,16 @@ function Projects() {
       <div className="header">
         <h1> PROJECTS </h1>
       </div>
-      <Box className="grid" flexDirection="row" >
+      <Box className="grid" flexDirection="row">
         {Object.keys(project_data).map((project) => (
-            <ProjectFolder projectName={project_data[project].projectName} description={project_data[project].description}
-            languages={project_data[project].languages}/>
+          <ProjectFolder
+            projectName={project_data[project].projectName}
+            description={project_data[project].description}
+            projectLink={project_data[project].projectLink}
+            languages={project_data[project].languages}
+            color={project_data[project].color}
+          />
         ))}
-        
       </Box>
     </Stack>
   );

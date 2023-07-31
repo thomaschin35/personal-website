@@ -54,8 +54,9 @@
       padding:10px;
       @include center;
       .col {
-        width: 47%;
-        padding: 5px;
+        width: 45%;
+        min-width: 500px;
+        padding: 10px;
         // background-color: darkorange;
       }
     }
