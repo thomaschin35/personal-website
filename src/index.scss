@@ -1,3 +1,10 @@
+$small_mobile_width: 360px;
+$mobile_width: 480px;
+$tablet_width: 768px;
+$medium_desktop_width: 990px;
+$desktop_width: 1100px;
+$large_desktop_width: 1280px;
+
 @mixin center {
   justify-content: center;
   align-items: center;
@@ -13,7 +20,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//     monospace;
-// }
+

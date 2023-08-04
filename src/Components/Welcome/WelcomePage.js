@@ -9,9 +9,6 @@ function Welcome() {
   return (
     <section className="welcome-section">
       <Stack direction="row" className="description">
-        {/* <Box className="personal-photo">
-          <img id="personal-photo" src={personalPhoto} alt="personal" />
-        </Box> */}
         <div className="textBox">
           <Fade bottom opposite>
             <p> 

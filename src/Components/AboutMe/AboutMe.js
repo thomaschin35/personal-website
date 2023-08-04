@@ -5,10 +5,15 @@ import personalPhoto from "./personal-photo.png"
 
 function AboutMe() {
   const PersonalFact = (props) => {
-    const { title, body } = props;
+    const { title, icon, body} = props;
     return (
       <div className="personal-facts-item">
-        <h1 className="title">{title}</h1>
+        <div className="personal-facts-head">
+          {/* <h5>
+            <i className={`personal-facts-icon ${icon}`} />
+          </h5> */}
+          <h5 className="title">{title}</h5>
+        </div>
         <p className="body">{body}</p>
       </div>
     );
@@ -23,7 +28,10 @@ function AboutMe() {
         </div>
         <div className="bio">
           <h3> 
-            Welcome! I am Thomas Chin, a computer science student at Georgia Institute of Technology <br/>who is dedicated to constructing technologies capable of helping people. 
+            {/* Welcome! I am Thomas Chin, a computer science student at Georgia Institute of Technology 
+            <br/>who is dedicated to constructing technologies capable of helping people.  */}
+            Welcome to my personal website! I'm Thomas Chin, a dedicated computer science student at the Georgia Institute of Technology. 
+            My mission is to create <i>innovative technologies</i> that make a positive impact on people's lives.
           </h3>
         </div>
         <Box className="personal-photo">
@@ -33,6 +41,7 @@ function AboutMe() {
           <Box className="col">
             <PersonalFact
               title="Education"
+              icon="fas fa-book-open"
               body={
                 <>
                   B.S Computer Science | Intelligence & Information

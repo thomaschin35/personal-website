@@ -29,7 +29,6 @@ function Projects() {
         }}
         onClick={() => handleClick(projectLink)}
       >
-        
         <CardMedia
           className="media"
           component="img"
@@ -56,11 +55,6 @@ function Projects() {
         </CardContent>
 
       </Card>
-      // <div className="folder">
-      //     <img src={personalPhoto}/>
-      //     <h3>PROJECT NAME</h3>
-      //     <p> lorem ipselum olre ahut sarome</p>
-      // </div>
     );
   };
 
