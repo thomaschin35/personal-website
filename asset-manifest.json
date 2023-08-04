@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.f176cf36.css",
-    "main.js": "/personal-website/static/js/main.499e45f9.js",
-    "static/media/background.png": "/personal-website/static/media/background.ac8010ecacb45a4ed637.png",
-    "static/media/personal-photo.png": "/personal-website/static/media/personal-photo.00cdfa908e4e1252f8f8.png",
-    "static/media/Solar Sight.png": "/personal-website/static/media/Solar Sight.e6432f06ae96ae2a7611.png",
-    "static/media/Flight Delay Predictor Tool.png": "/personal-website/static/media/Flight Delay Predictor Tool.67ef8316b34b9c9a82c4.png",
-    "static/media/Swim Times App.png": "/personal-website/static/media/Swim Times App.f5f22f8a9aece0d475d2.png",
-    "static/media/DQN Sumo Research.png": "/personal-website/static/media/DQN Sumo Research.85bff27a6a55a465891f.png",
-    "index.html": "/personal-website/index.html",
-    "static/media/tc.svg": "/personal-website/static/media/tc.bd0be3caa80cf2a6b140273e55d97aac.svg",
-    "main.f176cf36.css.map": "/personal-website/static/css/main.f176cf36.css.map",
-    "main.499e45f9.js.map": "/personal-website/static/js/main.499e45f9.js.map"
+    "main.css": "/static/css/main.1d44508e.css",
+    "main.js": "/static/js/main.e527b646.js",
+    "static/media/background.png": "/static/media/background.ac8010ecacb45a4ed637.png",
+    "static/media/personal-photo.png": "/static/media/personal-photo.00cdfa908e4e1252f8f8.png",
+    "static/media/Solar Sight.png": "/static/media/Solar Sight.e6432f06ae96ae2a7611.png",
+    "static/media/Flight Delay Predictor Tool.png": "/static/media/Flight Delay Predictor Tool.67ef8316b34b9c9a82c4.png",
+    "static/media/Swim Times App.png": "/static/media/Swim Times App.f5f22f8a9aece0d475d2.png",
+    "static/media/DQN Sumo Research.png": "/static/media/DQN Sumo Research.85bff27a6a55a465891f.png",
+    "index.html": "/index.html",
+    "static/media/tc.svg": "/static/media/tc.bd0be3caa80cf2a6b140273e55d97aac.svg",
+    "main.1d44508e.css.map": "/static/css/main.1d44508e.css.map",
+    "main.e527b646.js.map": "/static/js/main.e527b646.js.map"
   },
   "entrypoints": [
-    "static/css/main.f176cf36.css",
-    "static/js/main.499e45f9.js"
+    "static/css/main.1d44508e.css",
+    "static/js/main.e527b646.js"
   ]
 }
