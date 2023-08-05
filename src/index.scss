@@ -1,4 +1,4 @@
-$small_mobile_width: 360px;
+$small_mobile_width: 390px;
 $mobile_width: 480px;
 $tablet_width: 768px;
 $medium_desktop_width: 990px;
@@ -12,7 +12,10 @@ $large_desktop_width: 1280px;
   flex-wrap: wrap;
 }
 
-
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

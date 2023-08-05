@@ -3,16 +3,16 @@
 
 .welcome-section {
   position: relative;
-  height: 100vh;
-  // width:100vh;
+  min-height: 100vh;
+  width: 100%;
   @include center;
-  text-align: left;
+  text-align: center;
   .description {
     position: relative;
     @include center;
-    width: 60%;
+    width: 80%;
     // height: 80vh;
-    
+
     .textBox {
       margin-top: 50px;
       width: 50%;
@@ -20,36 +20,44 @@
       p {
         text-align: center;
         font-size: 2.1em;
-        // line-height: 30%;
+        @media (max-width: $small_mobile_width) {
+          font-size: 1.6em;
+        }
       }
       h1 {
         font-size: 3.5em;
         text-align: center;
         letter-spacing: 3px;
         margin-top: -20px;
+        @media (max-width: $small_mobile_width) {
+          font-size: 2.8em;
+          letter-spacing: 3px;
+          margin-top: -20px;
+        }
       }
     }
-    // @media (max-width: $tablet_width) {
-		// 	width: 90%;
-		// }
   }
 }
 
 .welcome-section::before {
   content: "";
-//   opacity: 0.7;
-  background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.6)
-    ),url("background.png");
+  //   opacity: 0.7;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("background.png");
   background-attachment: fixed;
-//   background-image: url("background.png");
+  //   background-image: url("background.png");
   position: absolute;
-  background-size:cover;
+  background-size: cover;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
   background-position: 50% 50%;
+  @media (max-width: $small_mobile_width) {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-position: 50% 30%;
+  }
 }

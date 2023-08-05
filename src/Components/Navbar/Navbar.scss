@@ -3,11 +3,13 @@
     padding: 0;
     z-index: 1000;
     position: -webkit-sticky;
+    display: flex;
     // margin-bottom: 40px;
 }
 
 .toolBar {
     background-color:rgb(29, 29, 29);
+    // width: 100wh;
     h2 {
         flex-grow:1;
         // font-size:200%;
@@ -28,11 +30,24 @@
     font-size: 1.3rem;
     text-decoration: none;
     color: white!important;
-    // // font-family: 'Quicksand', sans-serif;
-    // // $desktop_width
-    // @media (max-width: 2600) {
-    //     margin: 0 5px;
-    //     transition: 1s;
-    // }
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
+// .menu-items {
+//   display: flex;
+//   flex-direction: column;
+//   background-color: rgb(29, 29, 29); /* Use the same background color as toolbar */
+//   width: 100%; /* Set the same width as the toolbar */
+//   padding: 20px 0; /* Add some padding for spacing */
+//   border-top: 1px solid white; /* Add a top border */
+//   .MuiMenuItem-root {
+//     color: white; /* Set menu item text color */
+//     font-size: 1.3rem; /* Set menu item font size */
+//     text-align: center; /* Center align menu items */
+//     &:hover {
+//       background-color: rgba(255, 255, 255, 0.1); /* Add a hover effect */
+//     }
+//   }
+// }
 

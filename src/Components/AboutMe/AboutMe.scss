@@ -4,9 +4,11 @@
   position: relative;
   @include center;
   height: 100%;
+  width: 100%;
   .personal-facts {
     @include center;
-    width: 1200px;
+    // width: 1200px;
+    width: 85%;
 
     padding: 10px;
     .header {
@@ -47,7 +49,7 @@
       @include center;
       .col {
         width: 45%;
-        min-width: 500px;
+        min-width: 300px;
         padding: 10px;
       }
     }
@@ -69,5 +71,21 @@
     font-weight: 400;
     font-size: 1.05rem;
     line-height: 200%;
+  }
+}
+@media (max-width: $mobile_width) {
+  .personal-facts-item {
+    .title {
+      font-weight: 600;
+      font-size: 1.5em;
+      margin-bottom: -5px;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .body {
+      font-weight: 400;
+      font-size: 1.0rem;
+      line-height: 200%;
+    }
   }
 }
