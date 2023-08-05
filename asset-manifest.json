@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f016f85.css",
+    "main.css": "/static/css/main.96e2f94c.css",
     "main.js": "/static/js/main.bff593d3.js",
     "static/media/background.png": "/static/media/background.ac8010ecacb45a4ed637.png",
     "static/media/personal-photo.png": "/static/media/personal-photo.00cdfa908e4e1252f8f8.png",
@@ -10,11 +10,11 @@
     "static/media/DQN Sumo Research.png": "/static/media/DQN Sumo Research.85bff27a6a55a465891f.png",
     "index.html": "/index.html",
     "static/media/tc.svg": "/static/media/tc.bd0be3caa80cf2a6b140273e55d97aac.svg",
-    "main.4f016f85.css.map": "/static/css/main.4f016f85.css.map",
+    "main.96e2f94c.css.map": "/static/css/main.96e2f94c.css.map",
     "main.bff593d3.js.map": "/static/js/main.bff593d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f016f85.css",
+    "static/css/main.96e2f94c.css",
     "static/js/main.bff593d3.js"
   ]
 }
