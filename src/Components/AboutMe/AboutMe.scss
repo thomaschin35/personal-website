@@ -5,6 +5,7 @@
   @include center;
   height: 100%;
   width: 100%;
+  // background-color: aqua;
   .personal-facts {
     @include center;
     // width: 1200px;
@@ -25,11 +26,15 @@
       width: 75%;
     }
     .personal-photo {
-      border-radius: 50%;
-      height: 53vh;
-      width: 35vh;
-      margin-right: 20vh;
-      margin-left: 20vh;
+      border-radius: 5%;
+      height: 30vw;
+      width: 30vw;
+      @media (max-width: $tablet_width) {
+        height: 50vw;
+        width: 50vw;
+      }
+      margin-right: 20wh;
+      margin-left: 20wh;
       @include center;
       #personal-photo {
 
