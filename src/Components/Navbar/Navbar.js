@@ -12,7 +12,6 @@ import {
 import { animateScroll as scroll, scroller } from "react-scroll";
 import "./Navbar.scss";
 import { ReactComponent as IconSvg } from "./tc.svg";
-import App from "../../App";
 import MenuIcon from '@mui/icons-material/Menu';
 
 const CustomIcon = (props) => {

@@ -25,9 +25,9 @@ const data = {
     },
     dqn_sumo_research: {
         projectName: 'DQN Sumo Research',
-        description: 'Coordinated with the ECS Swim team to build a desktop application ' +
-        'to analyze and store individual swimmer times, goals, and records for every race distance', 
-        languages: 'Python',
+        description: 'Conducted Research under Professor Cheng at the Real Time Systems Lab' +
+        'to develop Deep Q Reinforcement Learning Algorithm to reroute vehicles in a traffic scenario using the SUMO simulation', 
+        languages: 'Python, SUMO',
         projectLink: "https://github.com/thomaschin35/STR-Sumo-Summer-Research",
         color: '#78B8F7'
     }
