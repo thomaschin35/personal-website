@@ -27,7 +27,7 @@ const Header = () => {
   const open = Boolean(mobileMenuOpen);
   const scrollToElement = (element) => {
     scroller.scrollTo(element, {
-      duration: 800,
+      duration: 0,
       delay: 0,
       smooth: "easeInOutQuart",
     });
