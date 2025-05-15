@@ -5,7 +5,7 @@ import Background from "../Background/Background";
 import personalPhoto_1 from "../../Images/AboutMe/personal-photo-hiking.jpeg";
 import personalPhoto_2 from "../../Images/AboutMe/personal-photo-piano.jpeg";
 import personalPhoto_4 from "../../Images/AboutMe/personal-photo-volley.JPG";
-import personalPhoto_5 from "../../Images/AboutMe/personal-photo.png";
+import personalPhoto_5 from "../../Images/AboutMe/personal-photo.jpg";
 import personalPhoto_6 from "../../Images/AboutMe/personal-photo-photography.jpg";
 import personalPhoto_7 from "../../Images/AboutMe/personal-photo-flashmob.JPG";
 import interestIcon_1 from "../../Images/AboutMe/volleyball_icon.png";
