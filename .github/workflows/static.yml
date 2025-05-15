@@ -40,6 +40,6 @@ jobs:
         with:
           # Upload entire repository
           path: "."
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages Yes
         id: deployment
         uses: actions/deploy-pages@v2
