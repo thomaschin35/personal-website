@@ -16,7 +16,7 @@ const ContactMePage = (props) => {
 };
 
 const ContactMe = () => (
-  <section className="contact-me-section" id="contact-me">
+  <section className="contact-me-section" id="contact">
     <footer>
       <h2 id="contact-me-heading">Contact Me</h2>
       <div className="contact-me-details wrapper">

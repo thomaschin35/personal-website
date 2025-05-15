@@ -12,15 +12,18 @@ $large_desktop_width: 1280px;
   flex-wrap: wrap;
 }
 
+.center {
+  @include center;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 body {
   margin: 0;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-

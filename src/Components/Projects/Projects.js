@@ -1,12 +1,9 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 import "./Projects.scss";
-import { Stack, Box, tableBodyClasses } from "@mui/material";
+import { Box } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import Collapse from "@mui/material/Collapse";
 import project_data from "./ProjectData";
 
 function Projects() {
@@ -14,17 +11,40 @@ function Projects() {
     window.open(link); // Opens the link in a new tab
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const elements = document.querySelectorAll(".fade-in");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => {
+      elements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
   const ProjectFolder = (props) => {
-    const { projectName, projectLink, description, languages, color } = props;
+    const { projectName, projectLink, description, languages } = props;
     return (
       <Card
-        className="card"
+        className="card fade-in"
         style={{ backgroundColor: "whitesmoke" }}
         sx={{
           background: "cover",
           transition: "all 0.2s ease",
           "&:hover": {
             transform: "scale3d(0.96, 0.96, 0.5)",
+            boxShadow: "0 0 20px #a5a5af, 0 0 40px #5e9395",
           },
         }}
         onClick={() => handleClick(projectLink)}
@@ -34,33 +54,33 @@ function Projects() {
           component="img"
           height="200"
           image={require(`./projectPhotos/${projectName}.png`)}
-          sx={{minHeight: "300"}}
+          sx={{ minHeight: "300" }}
         />
         <CardHeader
           className="card-header"
           titleTypographyProps={{
-            fontSize: 22,
+            fontSize: "1.2rem",
             fontWeight: "bold",
-            fontFamily:'Trebuchet MS',
+            fontFamily: 'Trebuchet MS',
           }}
           subheaderTypographyProps={{
-            fontSize: 15,
-            fontFamily:'Trebuchet MS'
+            fontSize: "0.8rem",
+            fontFamily: 'Trebuchet MS'
           }}
           title={projectName}
           subheader={languages}
         />
-        <CardContent className="content">
+        <div className="content">
           <p>{description}</p>
-        </CardContent>
+        </div>
 
       </Card>
     );
   };
 
   return (
-    <Stack className="projects">
-      <div className="header">
+    <div className="projects" id="projects">
+      <div className="header fade-in">
         <h1> PROJECTS </h1>
       </div>
       <Box className="grid" flexDirection="row">
@@ -74,7 +94,7 @@ function Projects() {
           />
         ))}
       </Box>
-    </Stack>
+    </div>
   );
 }
 

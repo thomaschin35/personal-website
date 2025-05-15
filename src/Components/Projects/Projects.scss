@@ -1,26 +1,29 @@
 @import "../../index.scss";
 .projects {
-  height: auto;
-  width: 100%;
-  background-image: 
-    linear-gradient(
-      rgba(34, 42, 46, 0.9),
-      rgba(34, 42, 46, 0.6)
-    ),url("background.png");
-    background-attachment: fixed;
-  // background-image: url(project_background.jpg);
-  background-size: cover;
-  // background: #2a3239;
-  // background-repeat:round;
-  overflow: hidden;
+  // width: 100%;
+  // background-image:
+  //   linear-gradient(
+  //     rgba(34, 42, 46, 0.9),
+  //     rgba(34, 42, 46, 0.6)
+  //   ),url("background.png");
+  //   background-attachment: fixed;
+  // // background-image: url(project_background.jpg);
+  // background-size: cover;
+  // // background: #2a3239;
+  // // background-repeat:round;
+  // overflow: hidden;
 
   @include center;
+  pointer-events: none;
   position: relative;
-  text-align: center;
-  // display:flex;
+  // text-align: center;
+  // display: flex;
+  // flex-direction: column;
   .header {
     // @include center;
     @include center;
+    width: 100%;
+    pointer-events: none;
     color: white;
     position: top;
     font-size: 2rem;
@@ -28,12 +31,19 @@
     margin-bottom: 20px;
   }
   .grid {
+    pointer-events: none;
     height: auto;
-    width:80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     @include center;
   }
+  .grid > * {
+    pointer-events: auto; // Re-enable interaction for children (like buttons, cards, etc.)
+  }
+}
+.projects > * {
+  pointer-events: auto; // Re-enable interaction for children (like buttons, cards, etc.)
 }
 .card {
   display: flex;
@@ -42,27 +52,34 @@
   // padding:10px;
   // border: 2px solid #ccc;
   border-radius: 5px;
-  // color:rgba(0, 0, 0, 0.1);
-  background-color: rgb(29, 29, 29);
-  width: 400px;
-  height: 380px;
+  width: 350px;
+  height: 320px;
   max-height: 500px;
-  margin: 10px;
-  margin-bottom: 50px;
-  cursor:pointer;
-  .card-header{
+  // margin: 10px;
+  margin: 1rem;
+  cursor: pointer;
+
+  .media {
+    min-height: 150px;
+    flex: 1;
+  }
+
+  .card-header {
     text-align: start;
     // background-color: aqua;
     width: 90%;
+    // flex: 1;
   }
   p {
-    font-family:'Trebuchet MS';
-    text-align:start;
+    text-align: start;
   }
   .content {
+    // @include center;
+    position: top;
+    flex: 1;
     width: 90%;
-    margin-top: -10%;
+    // height: auto;
+    margin-top: -20px;
     // height: 50%;
   }
 }
-
